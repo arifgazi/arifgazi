@@ -1,0 +1,294 @@
+/* root css start */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Oswald', sans-serif;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color1: #0771b9;
+    --color2: #5bc5f3;
+    --sans: 'Open Sans';
+    --oswald: 'Oswald';
+}
+
+/* root css end */
+
+/* welcome part start*/
+
+.container {
+    max-width: 90%;
+}
+
+.hero_part {
+    background: var(--color1);
+}
+.hero_icon li a {
+    color: #fff;
+}
+.hero_icon li a:hover {
+    color: #353535;
+}
+
+/* welcome part end */
+
+/* nav start */
+
+.nav-link{
+    font-family: var(--oswald);
+    color: #353535;
+}
+.nav-link:hover{
+    color: #0872b9
+}
+
+/* nav end */
+
+/* home start */
+
+#home{
+    position: relative;
+}
+#home .hero-txt{
+    position: absolute;
+    text-align: end;
+    top: 87px;
+    right: 70px;
+    color: #FFFF;
+}
+.hero-txt p{
+    margin-top: 30px;
+    font-size: 13px;
+    width: 460px;
+    font-family: var(--sans);
+}
+.hero-btn{
+    position: absolute;
+    top: 300px;
+    right: 70px;
+    font-family: var(--oswald);
+    border-radius: 0px;
+}
+.btn-primary{
+    margin-right: 20px;
+}
+.h-b:hover{
+    background-color: var(--color1);
+    color: #fff;
+    border: var(--color1);
+}
+
+/* home end */
+
+/* About us start */
+
+.about_head h2{
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+    font-weight: 700;
+}
+.about_cont {
+  padding-top:30px ;
+}
+/* About us end */
+
+/* services start */
+
+.servic_part{
+    padding-top: 50px;
+}
+.service_con_main{
+    padding: 80px 0;
+}
+
+.service_con{
+    padding: 30px 15px;
+    background: #f1f1f1;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.service_con h4{
+    padding-top: 45px;
+    text-transform: uppercase;
+}
+
+.service_icon{
+ width: 85px;
+ height: 85px;
+ background: #f1f1f1;;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ border: 8px double #fff;
+ position: absolute;
+ top: -42.5px;
+ left: 50%;
+ transform: translateX(-50%);
+ transition: 0.4s;
+}
+
+.service_con:hover .service_icon{
+    background: var(--color2);
+}
+
+.service_con:hover{
+box-shadow: 0 0 24px 6px rgba(0,0,0,.2);
+}
+
+/* servises end */
+
+/* portfolio start */
+.port_img{
+    position: relative;
+}
+
+.port_img:hover .port_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.port_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.port_overlay a{
+    width: 45px;
+    height: 45px;
+    background: var(--color2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}
+
+.port_con_main{
+    padding: 50px 0;
+}
+
+/* portfolio end */
+/* team */
+.team_img{
+    position: relative;
+}
+.team_img:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 0px 3px 3px;
+}
+.team_img:hover .team_overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.team_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: none;
+    transition: 0.5s;
+}
+
+.team_overlay ul li a{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.team_overlay ul li a:hover{
+background: var(--color2);
+border-color: var(--color2);
+}
+
+
+.team_con h4{
+text-transform: uppercase;
+}
+.team_con h5{
+    font-weight: 300;
+    font: 30px;
+    text-transform: capitalize;
+}
+
+.team_img:hover ~h4{
+    color: var(--color2);
+}
+/* team end */
+/* testi start */
+.star{
+    color: var(--color2);
+}
+/* testimonial end */
+/* footer start */
+.footer{
+    width: 99%;
+}
+.part2 i{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: var(--color2);
+    line-height: 35px;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: #fff;
+    font: size 16px;;
+}
+.part3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.part3 a:hover{
+    color: var(--color2);
+}
+.copy{
+    text-align: center;
+    font-size: 16px;
+}
+.copy a{
+    text-decoration: none;
+    color: var(--color2);
+}
+/* footer end */
